@@ -19,7 +19,10 @@ The `index.html` file in *src* folder is the root file for displaying data to th
 
 From the code above, when we run the application we get the below UI:
 
-//image0
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/AngularMastery/blob/main/1.%20Understanding%20Components%20%26%20UI/Notes/Images/0.png" height="auto" width="800" />
+</kbd>
+<hr>
 
 Looking at the image above and the `index.html` code above. It is clearly visible that the UI has more that what is provided on the `index.html` code, but how is that possible. Below is the `index.html` *body* tag which is responsible for the outcome we see on the UI/browser:
 
@@ -46,7 +49,10 @@ But how is that possible since there are no imports/script tags on the `index.ht
 
 If you actually view the `Debug` content of the loaded browser page by pressing the shortcut `F12` or right-click on the page and select *inspect*, we see the below results:
 
-//image1
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/AngularMastery/blob/main/1.%20Understanding%20Components%20%26%20UI/Notes/Images/1.png" height="auto" width="800" />
+</kbd>
+<hr>
 
 We can see that indeed there are scripts injected to the `index.html` file. These scripts are inject on the file by `angular CLI` when you build your application (using `ng serve`).
 
@@ -406,7 +412,7 @@ The template component will be located at `./app.component.html` and the code is
     <router-outlet />
 ```
 
-Which is what we see get rendered when we run the application. Meaning 
+Which is what we see get rendered when we run the application.
 
 
 
