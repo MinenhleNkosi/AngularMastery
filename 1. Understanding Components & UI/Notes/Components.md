@@ -406,7 +406,7 @@ The template component will be located at `./app.component.html` and the code is
     <router-outlet />
 ```
 
-Which is what we see get rendered when we run the application. Meaning 
+Which is what we see get rendered when we run the application. 
 
 
 
