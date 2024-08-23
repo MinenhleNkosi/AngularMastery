@@ -32,7 +32,10 @@ This is the component that makes it all possible for us to see what we get when 
 
 Below we can see the app component structure:
 
-//image0
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/AngularMastery/blob/main/2.%20Create%20First%20Component/Images/0.png" height="auto" width="800" />
+</kbd>
+<hr>
 
 We can see that the component is made up of three (3) files `app.component.css`, `app.component.html`, and `app.component.ts`.
 
@@ -41,7 +44,10 @@ That's the standard in angular, you create components as seperate files thus com
 ## Let's add a header compoenent.
 On our `app` folder, we will add a new file called `header.component.ts`:
 
-//image1
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/AngularMastery/blob/main/2.%20Create%20First%20Component/Images/1.png" height="auto" width="800" />
+</kbd>
+<hr>
 
 Now we have created the file, in that file we need to have a **class** because components in angular are classes that are enhanced by the component decorator like the one below:
 
@@ -163,7 +169,10 @@ Lastly we have to add the header tag on our `index.html` file:
 If we run our application we get the below:
 
 
-//image2
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/AngularMastery/blob/main/2.%20Create%20First%20Component/Images/2.png" height="auto" width="800" />
+</kbd>
+<hr>
 
 Which we can see our **Easy Task** message getting displayed.
 
