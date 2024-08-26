@@ -146,7 +146,7 @@ Let's also update the mockup for the `header.component.html` component file:
     </header>
 ```
 
-## Things to pay ettention to 😉
+## Things to pay attention to 😉
 Now when trying to load an images using it's directory path, we should check from the `angular.json` file make sure that the `assets` configuration is set:
 
 ```json
