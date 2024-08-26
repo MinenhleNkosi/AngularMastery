@@ -1,4 +1,4 @@
-# Make the application more persentable 🎇
+# Make the application more presentable 🎇
 Styling in Angular applications is crucial for several reasons:
 
 1. **User Experience (UX)**: Good styling enhances the overall user experience by making the application visually appealing and easier to use.
