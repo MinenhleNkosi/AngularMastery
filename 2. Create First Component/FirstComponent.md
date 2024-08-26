@@ -180,7 +180,10 @@ To render the *Header* component the way we did above is not the most efficient 
 
 The reason for Angular team taking this approach it's because they want **data** to be exchanged quickly with each component when communicating with each other.
 
-//image3
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/AngularMastery/blob/main/2.%20Create%20First%20Component/Images/3.png" height="auto" width="800" />
+</kbd>
+<hr>
 
 Going back to our previos code on the `main.ts` file:
 
@@ -218,7 +221,10 @@ The above tag is needed since it's the tag we specified on our decorator in the 
 
 But after adding our tag to the `app.component.html` file, we get the below error:
 
-//image4
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/AngularMastery/blob/main/2.%20Create%20First%20Component/Images/4.png" height="auto" width="800" />
+</kbd>
+<hr>
 
 This is because Angular does not scan all the files and folders and automatically re-adjust your components thus we must **explicitly** inform angular that we have created a new component. We do that by using a component inside of another component template. By going to the component in a template you're using in other components (which is the **app** component in our case) which is the one below:
 
@@ -268,7 +274,10 @@ Then the above will unlock the `import { HeaderComponent} from "./header.compone
 
 Now we can save the changes and run the application to get the below results:
 
-//image5
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/AngularMastery/blob/main/2.%20Create%20First%20Component/Images/5.png" height="auto" width="800" />
+</kbd>
+<hr>
 
 
 
