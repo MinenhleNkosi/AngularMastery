@@ -176,6 +176,102 @@ If we run our application we get the below:
 
 Which we can see our **Easy Task** message getting displayed.
 
+To render the *Header* component the way we did above is not the most efficient way because with angular the main objective is to build a tree of components. The root component which is the app component at the top and then there are other components that are nested inside that component or nested inside other components.
+
+The reason for Angular team taking this approach it's because they want **data** to be exchanged quickly with each component when communicating with each other.
+
+//image3
+
+Going back to our previos code on the `main.ts` file:
+
+```ts
+    import { bootstrapApplication } from '@angular/platform-browser';
+    import { appConfig } from './app/app.config';
+    import { AppComponent } from './app/app.component';
+    import { HeaderComponent } from './app/header.component';
+
+    bootstrapApplication(AppComponent, appConfig).catch((err) => console.error(err));
+    bootstrapApplication(HeaderComponent, appConfig).catch((err) => console.error(err));
+```
+We can see that there are some few changes that we need to make in order to fit the **Angular component based** standard:
+1. We will have to call the `boostarpApplication()` once from the main/root component.
+2. Use any other component in that **component template** or  in templates of other **nested components**.
+
+This means we will use our **Header** component instead of the template of the **app** component.
+Let's replace the *dummy* header on the starting page with the custom header component tag:
+
+```html
+    <header-root></header-root>
+```
+
+The above tag is needed since it's the tag we specified on our decorator in the `header.component` file:
+
+```ts
+    @Component({
+        selector: 'header-root',
+        standalone: true,
+        imports: [],
+        templateUrl: './header.component.html',
+        styleUrl: './header.component.css',
+    })
+```
+
+But after adding our tag to the `app.component.html` file, we get the below error:
+
+//image4
+
+This is because Angular does not scan all the files and folders and automatically re-adjust your components thus we must **explicitly** inform angular that we have created a new component. We do that by using a component inside of another component template. By going to the component in a template you're using in other components (which is the **app** component in our case) which is the one below:
+
+```ts
+    import { Component } from "@angular/core";
+
+    @Component({
+        selector: 'app-root',
+        standalone: true,
+        imports: [],
+        templateUrl: './app.component.html',
+        styleUrl: './app.component.css',
+    })
+    export class AppComponent {}
+```
+We now have to register that other component in the above template's component (which is the **header** component):
+
+```ts
+    import { Component } from "@angular/core";
+    import { HeaderComponent} from "./header.component";
+
+    @Component({
+        selector: 'app-root',
+        standalone: true,
+        imports: [],
+        templateUrl: './app.component.html',
+        styleUrl: './app.component.css',
+    })
+    export class AppComponent {}
+```
+Now next we have to add the component to the **imports** property.
+
+```ts
+    import { Component } from "@angular/core";
+    import { HeaderComponent} from "./header.component";
+
+    @Component({
+        selector: 'app-root',
+        standalone: true,
+        imports: [HeaderComponent],
+        templateUrl: './app.component.html',
+        styleUrl: './app.component.css',
+    })
+    export class AppComponent {}
+```
+Then the above will unlock the `import { HeaderComponent} from "./header.component";` component for the template of this **app** component.
+
+Now we can save the changes and run the application to get the below results:
+
+//image5
+
+
+
 
 
 
