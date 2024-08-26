@@ -182,6 +182,9 @@ Now let's make our style visible on the application by updating the `header.comp
 
 With all the above done, we have improved the **styling**, **adding images**, etc. The new application is the one we see below:
 
-//image 1
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/AngularMastery/blob/main/3.%20Styling%20Header%20Component/Images/1.png" height="auto" width="800" />
+</kbd>
+<hr>
 
 From the above image is good accomplishment since now we have our finished **CUSTOM COMPONENT** 😁.
