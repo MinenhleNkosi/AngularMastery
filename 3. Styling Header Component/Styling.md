@@ -187,4 +187,9 @@ With all the above done, we have improved the **styling**, **adding images**, et
 </kbd>
 <hr>
 
-From the above image is good accomplishment since now we have our finished **CUSTOM COMPONENT** 😁.
+From the above image is good accomplishment since now we have our finished **CUSTOM COMPONENT** 😁. The full custom component was created using the below files:
+
+<kbd>
+  <img src="https://github.com/MinenhleNkosi/AngularMastery/blob/main/3.%20Styling%20Header%20Component/Images/2.png" height="auto" width="400" />
+</kbd>
+<hr>
